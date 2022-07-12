@@ -29,9 +29,9 @@ body {
     box-shadow: 1px 1px 10px;
     border-radius: 4px;
     padding: 1.5em 0em;
-    overflow:auto; 
-    display:flex; 
-    flex-direction:column-reverse;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
     background-color: var(--prompt-bg-color);
 }
 

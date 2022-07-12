@@ -45,3 +45,11 @@ function getLastCommand() {
         document.getElementById("input_source").value = lastCommand;
     }
 }
+
+
+
+
+
+
+
+
