@@ -1,8 +1,20 @@
-// Search something on google, if no arguments are provided => www.google.com
+// Search something on DuckDuckGo and if no arguments are provided go to duckduckgo.com
+d = duckduckgo;
+duck = duckduckgo;
+function duckduckgo(args) {
+    if (args != undefined) {
+        search = args.replace(" ", "+")
+        window.open("https://www.duckduckgo.com/?q=" + args.replace(" ", "+"));
+    } else {
+        window.open("https://www.duckduckgo.com");
+    }
+}
+
+// Search something on Google and if no arguments are provided go to google.com
 g = google;
 function google(args) {
     if (args != undefined) {
-        search = args.replace(" ", "+")
+        let search = args.replace(" ", "+")
         window.open("https://www.google.com/search?q=" + search);
     } else {
         window.open("https://www.google.com");
@@ -22,15 +34,6 @@ function clear(args) {
     document.getElementById('wrapper').innerHTML = "";
 }
 
-
-
-
-
-
-
-
-
-
 // Go to a website
 function launch(args) {
     args = args.trim() // removes leading/trailing whitespace
@@ -43,3 +46,7 @@ function launch(args) {
     }
 }
 
+// TODO Add help with info about available links
+// TODO Add hello as alias to help
+// TODO Add DuckDuckGo search
+// TODO Add favicon to terminal.css

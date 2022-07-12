@@ -46,10 +46,4 @@ function getLastCommand() {
     }
 }
 
-
-
-
-
-
-
-
+// TODO Add Welcome message
