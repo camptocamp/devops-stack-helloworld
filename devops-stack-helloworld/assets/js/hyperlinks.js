@@ -1,56 +1,37 @@
+// This file is not used as it is overloaded during deployment. 
+// We do this because there are dynamic hyperlinks that are parsed by Helm.
+// Below this is just an example of how to configure the hyperlinks.
+
+// Link definition
 const lists = [
   {
-    heading: 'Applications',
+    heading: 'Group_1',
     links: [
       {
-        title: 'Argo CD',
-        url: 'https://argocd.apps.<cluster_name>.<cluster_domain>/',
-      },
-//      {
-//        title: 'Traefik Dashboard',
-//        url: 'https://traefik.apps.gh-v1test.is-sandbox.camptocamp.com/',
-//      },
-      {
-        title: 'Grafana',
-        url: 'https://grafana.apps.<cluster_name>.<cluster_domain>/',
+        title: 'Hyperlink_1',
+        url: 'https://www.hyperlink-1.com/',
       },
       {
-        title: 'Prometheus',
-        url: 'https://prometheus.apps.<cluster_name>.<cluster_domain>/',
+        title: 'Hyperlink_2',
+        url: 'https://www.hyperlink-2.com/',
       },
       {
-        title: 'Alertmanager',
-        url: 'https://alertmanager.apps.<cluster_name>.<cluster_domain>/',
+        title: 'Hyperlink_3',
+        url: 'https://www.hyperlink-3.com/',
       },
     ],
   },
   {
-    heading: 'DevOps Stack',
+    heading: 'Group_2',
     links: [
       {
-        title: 'About',
-        url: 'https://devops-stack.io/',
-      },
-      {
-        title: 'Documentation',
-        url: 'https://devops-stack.io/docs/latest/',
-      },
-      {
-        title: 'Repository',
-        url: 'https://github.com/camptocamp/devops-stack',
-      },
-    ],
-  },
-  {
-    heading: 'Our Company',
-    links: [
-      {
-        title: 'Camptocamp',
-        url: 'https://www.camptocamp.com/',
+        title: 'Hyperlink_1',
+        url: 'https://www.hyperlink-1.com/',
       },
     ],
   },
 ]
+// End of link definition
 
 function renderLists() {
   const linksWrapper = document.querySelector('#links')
