@@ -1,8 +1,8 @@
 // This file is not used as it is overloaded during deployment. 
 // We do this because there are dynamic hyperlinks that are parsed by Helm.
-// Below this is just an example of how to configure the hyperlinks.
+// Below you can see an example of how to configure the hyperlinks.
 
-// Link definition
+// Link definitions
 const lists = [
   {
     heading: 'Group_1',
@@ -31,7 +31,7 @@ const lists = [
     ],
   },
 ]
-// End of link definition
+// End of link definitions
 
 function renderLists() {
   const linksWrapper = document.querySelector('#links')
