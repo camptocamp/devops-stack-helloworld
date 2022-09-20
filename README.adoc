@@ -9,8 +9,8 @@ This container expects to have the link:devops-stack-helloworld/assets/js/hyperl
 To test this web site locally, simply create an `hyperlink.js` (you can use the content from this https://github.com/camptocamp/devops-stack-helloworld-templates/blob/main/apps/helloworld/templates/helloworld_hyperlinks_configmap.yaml[ConfigMap]) and then run this command on the same folder:
 
 [source,bash]
-====
+----
 docker run --publish 8080:80 --mount type=bind,source="$(pwd)"/hyperlinks.js,target=/usr/share/nginx/html/assets/js/hyperlinks.js,readonly ghcr.io/camptocamp/devops-stack-helloworld:latest
-====
+----
 
 You can then visit https://localhost:8080 to view the web site and if everything is good you can then kill the container and then delete `hyperlink.js` you created before.
