@@ -1,5 +1,5 @@
 ---
-name: Build and push container image
+name: Build and publish image
 
 on:
   pull_request:
