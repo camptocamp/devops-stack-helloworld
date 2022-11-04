@@ -14,3 +14,15 @@ docker run --publish 8080:80 --mount type=bind,source="$(pwd)"/hyperlinks.js,tar
 ----
 
 You can then visit https://localhost:8080 to view the web site and if everything is good you can then kill the container and then delete `hyperlink.js` you created before.
+
+== Release instructions
+
+The image is built automatically as long as there is a tag added to this repository. In order to do this, create a tag and push a tag on the `main` branch using the following steps:
+
+[source,bash]
+----
+git tag v1.0.5 # Use the correct versions instead of the ones in the example
+git push --tags
+----
+
+Then, check if there is a new release available in https://github.com/camptocamp/devops-stack-helloworld/pkgs/container/devops-stack-helloworld[`Packages`] separator on this repository.
