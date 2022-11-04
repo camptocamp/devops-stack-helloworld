@@ -21,7 +21,7 @@ jobs:
       id: metadata_extraction
       uses: docker/metadata-action@v4
       with:
-        images: ${{ env.REGISTRY }}/${{ github.repository }}
+        images: ghcr.io/${{ github.repository }}
 
     - name: Login to GitHub Container Registry
       if: github.event_name == 'push' && github.ref_type == 'tag' # Only login if we push a tag
